@@ -86,7 +86,7 @@ def SaveIPUpdate(filename,ipaddress):
 
 
 def PushOver(title,message):
-  pcfg = cfg.pushover
+  pcfg = cfg["pushover"]
   conn = httplib.HTTPSConnection(pcfg["apiurl"])
   conn.request("POST","/1/messages.json",
     urllib.urlencode({
@@ -99,7 +99,6 @@ def PushOver(title,message):
 
 if (len(sys.argv) > 1):
   configfile = sys.argv[1]
-  print "Config File : " + configfile
 
 cfg = LoadConfig(configfile)
 ipfile = cfg["ipmonitor"]["addressfile"]
