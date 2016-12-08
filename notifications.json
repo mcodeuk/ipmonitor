@@ -1,0 +1,20 @@
+{
+    "pushover":{
+        "apiurl":"api.pushover.net:443",
+                "token":"pushover token",
+                "userkey":"pushover user token"
+     },
+        "email":{
+        "server":"email server address",
+        "fromaddress":"sending email address",
+        "fromname":"Senders Name",
+                "toaddress":"destination email address",
+                "toname":"destination Name"
+    },
+    "ipmonitor":{
+        "ipsite":"http://myip.dnsomatic.com",
+        "addressfile":"file location to save old ip address",
+        "statefile":"file location to save state, used to prevent too many emails when Broadband is down",
+        "emailnotificationrate":1
+    }
+}
