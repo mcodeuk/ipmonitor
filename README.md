@@ -8,4 +8,4 @@ IP Monitor is a simple Python script that monitors the IP address of your Broadb
 A static configuration file in JSON format is loaded at runtime containing all of the relevant static data including PushOver API information and Email addresses.
 
 As I use a local Email server for my notifications internally I do not require or use SMTP authentication.
-This can be added if so desired
+This can be added if so desired.
